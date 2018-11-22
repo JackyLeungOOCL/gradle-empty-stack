@@ -18,8 +18,8 @@ public class App {
 }
 
 class Vehicle {
-    public String name;
-    public String brand;
+    private String name;
+    private String brand;
     private float speed;
     public Vehicle(String name, String brand) {
         this.name = name;
@@ -29,6 +29,6 @@ class Vehicle {
 
     public void speedUp(float acceleration) {
         speed += acceleration;
-        System.out.printf("Car %s in brand %s is in %f km/h\n", name, brand, speed);
+        System.out.printf("Car %s in brand %s is in %.2f km/h\n", name, brand, speed);
     }
 }
