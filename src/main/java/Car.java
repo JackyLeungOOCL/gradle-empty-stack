@@ -4,6 +4,7 @@ public class Car extends Vehicle {
     }
 
     public void speedUp(float toSpeed) {
+        System.out.println("__I am Car__");
         if (toSpeed <= 200) {
             super.speedUp(toSpeed);
         } else {

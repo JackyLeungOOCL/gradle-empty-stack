@@ -19,5 +19,18 @@ public class App {
         Car carA = new Car("C", "NewCar");
         carA.speedUp(200);
         carA.speedUp(201);
+
+        Vehicle bus = new Bus("My bus", "OOCL");
+        bus.speedUp(70);
+        bus.speedUp(100);
+
+        Driver tommy = new Driver(vehicleA, "Tommy");
+        tommy.speedUp(50);
+
+        Driver jacky = new Driver(vehicleB, "Jacky");
+        jacky.speedUp(111);
+
+        Driver baby = new Driver(bus, "Baby");
+        baby.speedUp(666);
     }
 }
