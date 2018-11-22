@@ -7,6 +7,28 @@ public class App {
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        Vehicle vehicleA = new Vehicle("A", "Audi");
+        Vehicle vehicleB = new Vehicle("B", "BMW");
+        vehicleA.speedUp(30);
+        vehicleB.speedUp(50);
+    }
+}
+
+class Vehicle {
+    public String name;
+    public String brand;
+    private float speed;
+    public Vehicle(String name, String brand) {
+        this.name = name;
+        this.brand = brand;
+        speed = 0;
+    }
+
+    public void speedUp(float acceleration) {
+        speed += acceleration;
+        System.out.printf("Car %s in brand %s is in %f km/h\n", name, brand, speed);
     }
 }
